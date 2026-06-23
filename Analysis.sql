@@ -84,7 +84,7 @@ FROM Sales S
 JOIN SalesDetails SD
 	ON S.SaleID = SD.SaleID
 JOIN Products P
-	ON SD.ProductID = SD.ProductID
+	ON SD.ProductID = P.ProductID
 JOIN Stores ST
 	ON ST.StoreID = S.StoreID
 GROUP BY ST.Region
